@@ -300,6 +300,9 @@
                         <id>enforce</id>
                         <configuration>
                             <rules>
+                                <requireJavaVersion>
+                                    <version>8</version>
+                                </requireJavaVersion>
                                 <dependencyConvergence/>
                                 <bannedDependencies>
                                     <excludes>
