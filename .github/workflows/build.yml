@@ -62,5 +62,4 @@ jobs:
         run: mvn install javadoc:javadoc
       - name: Build + Test + Sonar + Maven Deploy
         if: github.ref == 'refs/heads/master'
-        # TODO - remove skipTests
-        run: mvn javadoc:javadoc deploy -DskipTests -Psonar
+        run: mvn deploy javadoc:javadoc -Psonar
